@@ -1,0 +1,21 @@
+[workspace]
+authors = ["OmerRonen <omerronen10@gmail.com>"]
+channels = ["conda-forge", "pytorch", "bioconda"]
+name = "prot_interactions"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+run = "python main.py"
+
+[dependencies]
+python = ">=3.9"
+pytorch = "*"
+numpy = "*"
+pandas = "*"
+biopython = "*"
+tqdm = "*"
+pip = "*"
+
+[pypi-dependencies]
+fair-esm = "*"
