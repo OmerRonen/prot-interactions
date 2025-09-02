@@ -11,15 +11,12 @@ from typing import List, Union
 
 from Bio import SeqIO
 from Bio.Seq import Seq
-from tqdm import tqdm
 
 from esm.data import FastaBatchedDataset
 
 from Bio.PDB.MMCIFParser import MMCIFParser
 from Bio.PDB.Polypeptide import protein_letters_3to1
 
-
-from esm.pretrained import load_model_and_alphabet_core
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 DATA_PATH = "data"
